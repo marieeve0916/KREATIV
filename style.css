@@ -111,6 +111,7 @@ main {
   display: block;
 }
 
+/****** SECTIONS DU SITE ******/
 /* Styles de chaque section du site */
 section {
     background-color: var(--beige);
@@ -245,4 +246,112 @@ footer{
 footer > div > h6 {
     text-align: center;
     font-weight: 400;
+}
+
+/***************** REQUÊTES MÉDIAS ******************/
+/************ VERSION TABLETTE ************/
+@media screen and (min-width:576px) {
+   section {
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-bottom: 5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    section > div > p {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    footer {
+        height: 30rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    footer > p {
+        margin: 0rem;
+    }
+}
+/************ VERSION ORDINATEUR ************/
+@media (min-width:992px) {
+    /****** MENU ******/
+    .logo-kreativ {
+        position: relative;
+        left: -37vw;
+    }
+        
+    .menu-site {
+        width: 67%;
+        height: 2.6rem;
+        background-color: transparent;
+        transform: translateX(0%);
+        transition: none; 
+    }
+        
+    .menu-site > div {
+        height: 2.6rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 0rem;
+        margin-left: 0rem;
+        position: relative;
+        right: -32vw;
+    }
+        
+    .menu-site > div > a {
+        width: 8.9rem;
+        padding: 0.35rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border-radius: 15px;
+        font-size: 1rem;
+    }
+         
+    .bouton-burger {
+        display: none;
+    }
+
+    h1 {
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+    .centrer-contenu{
+        justify-content: center;
+    }
+
+    section {
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section-image {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .section-c4d {
+        flex-direction: column;
+    }
+
+    .contenu-c4d {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .contenu-c4d > div {
+        width: 46%;
+    }
 }
