@@ -1,13 +1,190 @@
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>KREATIV</title>
+
+    <!-- Icônes -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">   
+
+    <!-- Fichiers CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-    <h1>KREATIV</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ratione vitae quae, ipsum, repellendus ab hic atque corporis eligendi animi neque exercitationem cumque in. Veritatis officiis fugit in itaque cumque.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ratione vitae quae, ipsum, repellendus ab hic atque corporis eligendi animi neque exercitationem cumque in. Veritatis officiis fugit in itaque cumque.</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ratione vitae quae, ipsum, repellendus ab hic atque corporis eligendi animi neque exercitationem cumque in. Veritatis officiis fugit in itaque cumque.</p>
+    <!-- Menu -->
+    <header>
+        <div class="barre-menu">
+            <input type="checkbox" id="case-bouton-burger">
+            <label for="case-bouton-burger" class="bouton-burger">
+                <span class="material-symbols-outlined bouton-burger-ouvrir" id="menu">menu</span>
+                <span class="material-symbols-outlined bouton-burger-fermer" id="fermer-menu">close</span>
+            </label>  
+            <div class="logo-kreativ"></div>
+            <nav class="menu-site">
+                <div>
+                    <a href="#presentation">Présentation</a>
+                    <a href="#image">Image</a>
+                    <a href="#cinema4d">Cinema 4D</a>
+                    <a href="#montage">Montage</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Présentation -->
+        <section id="presentation" class="section-presentation">
+            <h1>De l'imaginaire <br> au papier</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni ut voluptates explicabo 
+                vero repellat officiis consectetur! Labore porro adipisci quaerat. Harum sint optio dolor cum 
+                quaerat animi, neque illum?
+            </p>
+            <div class="centrer-contenu">
+                <!-- <video width="" height="" controls>
+                    <source src="">
+                </video> -->
+                <img class="placeholder-video" src="images/PlaceholderRectangle.png" alt="">
+            </div>
+        </section>
+
+        <!-- Section Image -->
+        <section id="image" class="section-image">
+            <h1>Image</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni ut voluptates explicabo 
+                vero repellat officiis consectetur! Labore porro adipisci quaerat. Harum sint optio dolor cum 
+                quaerat animi, neque illum?
+            </p>
+            <div class="identité-graphique-elements">
+                <div>
+                    <h3>Palette de <div class="mot-h3-gras">couleurs</div></h3>
+                    <!-- <img src="" alt=""> -->
+                </div>
+                <div>
+                    <h3>Effet <div class="mot-h3-gras">demi-teinte</div></h3>
+                    <!-- <img src="" alt=""> -->
+                </div>
+            </div>
+            <div>
+                <h2>Étiquette des crayons</h2>
+                <div class="centrer-contenu">
+                    <img class="placeholder-etiquette-boite" src="images/PlaceholderRectangle.png" alt="">
+                </div>
+            </div>
+            <div>
+                <h2>Étiquette de la boîte</h2>
+                <div class="centrer-contenu">
+                    <img class="placeholder-etiquette-boite" src="images/PlaceholderRectangle.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Cinema 4D -->
+        <section id="cinema4d" class="section-c4d">
+            <h1>Cinema 4D</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni ut voluptates explicabo 
+                vero repellat officiis consectetur! Labore porro adipisci quaerat. Harum sint optio dolor cum 
+                quaerat animi, neque illum?
+            </p>
+            <div>
+                <div class="c4d-modelisation">
+                    <h2>Modélisation</h2>
+                    <div class="c4d-sous-section-img">
+                        <img class="placeholder-img-c4d" src="images/PlaceholderRectangle.png" alt="">
+                        <img class="placeholder-img-c4d" src="images/PlaceholderRectangle.png" alt="">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni ut voluptates explicabo 
+                        vero repellat officiis consectetur! Labore porro adipisci quaerat. Harum sint optio dolor cum 
+                        quaerat animi, neque illum?
+                    </p>
+                </div>
+                <div class="c4d-textures">
+                    <h2>Textures</h2>
+                    <div class="c4d-sous-section-img">
+                        <img class="placeholder-img-c4d" src="images/PlaceholderRectangle.png" alt="">
+                        <img class="placeholder-img-c4d" src="images/PlaceholderRectangle.png" alt="">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni ut voluptates explicabo 
+                        vero repellat officiis consectetur! Labore porro adipisci quaerat. Harum sint optio dolor cum 
+                        quaerat animi, neque illum?
+                    </p>
+                </div>
+                <div class="c4d-eclairages-decor">
+                    <h2>Éclairage et décor</h2>
+                    <div class="c4d-sous-section-img">
+                        <img class="placeholder-img-c4d" src="images/PlaceholderRectangle.png" alt="">
+                        <img class="placeholder-img-c4d" src="images/PlaceholderRectangle.png" alt="">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni ut voluptates explicabo 
+                        vero repellat officiis consectetur! Labore porro adipisci quaerat. Harum sint optio dolor cum 
+                        quaerat animi, neque illum?
+                    </p>
+                </div>
+                <div class="c4d-quelques-images">
+                    <h2>Quelques images</h2>
+                    <div class="c4d-sous-section-quelques-img">
+                        <div>
+                            <img class="placeholder-quelques-img-c4d" src="images/PlaceholderRectangle.png" alt="">
+                        </div>
+                        <div>
+                            <img class="placeholder-quelques-img-c4d" src="images/PlaceholderRectangle.png" alt="">
+                        </div>
+                        <div>
+                            <img class="placeholder-quelques-img-c4d" src="images/PlaceholderRectangle.png" alt="">
+                        </div>
+                        <div>
+                            <img class="placeholder-quelques-img-c4d" src="images/PlaceholderRectangle.png" alt="">
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Montage -->
+        <section id="montage" class="section-montage">
+            <h1>Montage</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni ut voluptates explicabo 
+                vero repellat officiis consectetur! Labore porro adipisci quaerat. Harum sint optio dolor cum 
+                quaerat animi, neque illum?
+            </p>
+            <div class="centrer-contenu">
+                <img class="placeholder-video" src="images/PlaceholderRectangle.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>
+                Projet réalisé dans le cadre du cours
+                <div class="texte-gras-footer">Projet de fin d'études</div>
+            </p>
+        </div>
+        <div>
+            <p>
+                Réalisé par
+                <div class="texte-gras-footer">Marie-Ève Pelletier</div>
+            </p>
+        </div>
+        <div class="liens-web-footer">
+            <a href="https://www.behance.net/mepelletier">Behance</a>
+            <a href="https://www.linkedin.com/in/marieevepelletier19/">LinkedIn</a>
+        </div>
+        <div>
+            <h6>Marie-Ève Pelletier - 2024 | Tous droits réservés</h6>
+        </div>
+    </footer>
 </body>
 </html>

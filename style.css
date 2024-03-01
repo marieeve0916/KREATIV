@@ -1,0 +1,248 @@
+/* Les couleurs du site */
+:root {
+    --beige: #F9EBE1;
+    --orange: #EEA680;
+    --rose-mauve: #AA7993;
+    --mauve: #504793;
+    --noir: #2A2B2E;
+}
+
+/* Styles généraux du body */
+body {
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+/* Styles généraux du main */
+main {
+    width: 100vw;
+    margin: 0 auto;
+    margin-top: 4.7rem;
+    padding-bottom: 1rem;
+    background-color: #FFFDFA;
+    color: var(--noir);
+    overflow-x: hidden;
+}
+
+/************ VERSION MOBILE ************/
+/****** MENU ******/
+.logo-kreativ {
+    width: 118px;
+    height: 65px;
+    background-image: url(images/LogoKREATIV.png);
+    background-size: cover;
+    margin: auto;
+    margin-top: 0.6rem;
+    transform: rotate(5deg);
+}
+
+/* Styles de la barre du menu */
+.barre-menu {
+    width: 100vw;
+    height: 3.3rem;
+    background-color: var(--mauve);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 30;
+}
+
+/* Styles du menu burger */
+.menu-site {
+    width: 80%;
+    height: 22rem;
+    background-color: var(--rose-mauve);
+    border-radius: 35px;
+    position: fixed;
+    transform: translateY(-110%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-site > div {
+    width: 100%;
+    height: 15rem;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styles des liens du menu */
+.menu-site > div > a {
+    width: 80%;
+    background-color: #cf95b49d;
+    border-radius: 50px;
+    color: var(--beige);
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 550;
+    padding: 0.7rem;
+}
+
+/* Styles du bouton burger */
+.bouton-burger {
+    color: var(--beige);
+    padding-left: 1rem;
+    z-index: 10;
+}
+
+/* Gestion du fonctionnement de la case à cocher qui ouvre le menu */
+#case-bouton-burger {
+    display: none;
+}
+
+#case-bouton-burger:checked ~ .menu-site {
+    transform: translateY(30%);
+}
+
+.bouton-burger > .bouton-burger-fermer {
+    display: none;
+}
+
+#case-bouton-burger:checked ~ .bouton-burger > .bouton-burger-ouvrir {
+  display: none;
+}
+
+#case-bouton-burger:checked ~ .bouton-burger > .bouton-burger-fermer {
+  display: block;
+}
+
+/* Styles de chaque section du site */
+section {
+    background-color: var(--beige);
+    border-radius: 20px;
+    box-shadow: #907d627b 2px 2px 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles des différents titres */
+h1 {
+    color: var(--mauve);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: var(--mauve);
+}
+
+h3 {
+    text-transform: uppercase;
+    color: var(--mauve);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* Pour centrer les images et bien les positionner */
+.centrer-contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c4d-sous-section-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.c4d-sous-section-quelques-img {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.c4d-sous-section-quelques-img > div {
+    width: 48%;
+    margin-bottom: 0.35rem;
+}
+
+/* Style des sous-sections de la section Image */
+.identité-graphique-elements{
+    display: flex;
+    justify-content: space-between;
+}
+.identité-graphique-elements > div {
+    width: 44%;
+    background-color: #cf7faa52;
+    box-shadow: #9c886a66 2px 2px 5px;
+    border-radius: 13px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.mot-h3-gras {
+    font-weight: 750;
+    font-size: 1.1rem;
+}
+
+/* Styles des éléments temporaires */
+.placeholder-video {
+    width: 95%;
+}
+
+.placeholder-etiquette-boite {
+    width: 95%;
+}
+
+.placeholder-img-c4d {
+    width: 48%;
+}
+
+.placeholder-quelques-img-c4d {
+    width: 100%;
+}
+
+/* Styles du footer */
+footer{
+    padding: 1rem;
+    background-color: var(--mauve);
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--beige);
+}
+
+.texte-gras-footer {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.liens-web-footer {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.liens-web-footer > a {
+    text-decoration: none;
+    background-color: var(--rose-mauve);
+    border-radius: 50px;
+    color: var(--beige);
+    font-weight: 500;
+    text-align: center;
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 1rem;
+}
+
+footer > div > h6 {
+    text-align: center;
+    font-weight: 400;
+}
