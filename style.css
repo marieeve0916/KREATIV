@@ -177,6 +177,7 @@ h3 {
     display: flex;
     justify-content: space-between;
 }
+
 .identité-graphique-elements > div {
     width: 44%;
     background-color: #cf7faa52;
@@ -184,6 +185,15 @@ h3 {
     border-radius: 13px;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+}
+
+.identité-graphique-elements > div > img {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.identité-graphique-elements > div > #img-style-graphique {
+    width: 30%;
 }
 
 .mot-h3-gras {
@@ -338,6 +348,19 @@ footer > div > h6 {
     .section-image {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    .identité-graphique-elements{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .identité-graphique-elements > div > img {
+        width: 44%;
+    }
+    
+    .identité-graphique-elements > div > #img-style-graphique {
+        width: 20%;
     }
 
     .section-c4d {
