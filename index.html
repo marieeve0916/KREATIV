@@ -16,6 +16,9 @@
     <!-- Fichiers CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+
+    <!-- Fichier JavaScript -->
+    <script src="carrousel.js"></script>
 </head>
 <body>
     <!-- Menu -->
@@ -79,9 +82,29 @@
             </div>
             <div>
                 <div>
-                    <h2>Étiquette des crayons</h2>
+                    <h2>Étiquettes des crayons</h2>
                     <div class="centrer-contenu">
-                        <img class="placeholder-etiquette-boite" src="images/PlaceholderRectangle.png" alt="">
+                        <div class="carrousel">
+                            <!-- Les images -->
+                            <div class="les-images">
+                                <img src="images/EtiquettesCrayons/EtiquetteCrayonRose.png" alt="">
+                            </div>
+                            <div class="les-images">
+                                <img src="images/EtiquettesCrayons/EtiquetteCrayonBleu.png" alt="">
+                            </div>
+                            <div class="les-images">
+                                <img src="images/EtiquettesCrayons/EtiquetteCrayonMauve.png" alt="">
+                            </div>
+                            <div class="les-images">
+                                <img src="images/EtiquettesCrayons/EtiquetteCrayonOrange.png" alt="">
+                            </div>
+                            <div class="les-images">
+                                <img src="images/EtiquettesCrayons/EtiquetteCrayonJaune.png" alt="">
+                            </div>
+                            <!-- Les boutons du carrousel -->
+                            <a class="bouton-img-precedente">&#10094;</a>
+                            <a class="bouton-img-suivante">&#10095;</a>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -195,4 +218,6 @@
         </div>
     </footer>
 </body>
+    <!-- Fichier JavaScript -->
+    <script src="gestion-scroll.js"></script>
 </html>

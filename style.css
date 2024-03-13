@@ -201,6 +201,15 @@ h3 {
     font-size: 1.1rem;
 }
 
+/* Styles du carrousel */
+.carrousel > div > img {
+    width: 70%;
+}
+
+.carrousel {
+    width: 80%;
+}
+
 /* Styles des éléments temporaires */
 .placeholder-video {
     width: 95%;
