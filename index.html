@@ -7,6 +7,8 @@
     <!-- Icônes -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <!-- Polices -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,16 +46,19 @@
             <div>
                 <h1>De l'imaginaire <br> au papier</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni ut voluptates explicabo 
-                    vero repellat officiis consectetur! Labore porro adipisci quaerat. Harum sint optio dolor cum 
-                    quaerat animi, neque illum?
+                    Pour mon projet de recherche, je souhaitais apprendre un nouveau logiciel de 3D, Cinema 4D.
+                    Étant un des standards dans l'industrie de la publicité, j'ai donc choisi d'en réaliser une
+                    pour une marque de marqueurs fictive, nommée KREATIV. Pour ce faire, j'ai réalisé l'identité
+                    visuelle de la marque, j'ai appris le logiciel sous plusieurs de ses aspects (modélisation, 
+                    textures, éclairage, système de particules et animation), puis j'ai monté le tout sur After 
+                    Effects.
                 </p>
             </div>
             <div class="centrer-contenu">
-                <!-- <video width="" height="" controls>
-                    <source src="">
-                </video> -->
-                <img class="placeholder-video" src="images/PlaceholderRectangle.png" alt="">
+                <video class="video-kreativ" width="1920" height="1080" controls>
+                    <source src="images/PelletierMarieEve_KREATIV.mp4">
+                </video>
+                <!-- <img class="placeholder-video" src="images/PlaceholderRectangle.png" alt=""> -->
             </div>
         </section>
 
@@ -62,32 +67,62 @@
             <div>
                 <h1>Image</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni ut voluptates explicabo 
-                    vero repellat officiis consectetur! Labore porro adipisci quaerat. Harum sint optio dolor cum 
-                    quaerat animi, neque illum?
+                    Tout d'abord, j'ai conçu l'identité visuelle de KREATIV. Je souhaitais, comme son nom l'indique, 
+                    que la marque se démarque au niveau de la créativité de ses produits. C'est donc pour cela que 
+                    l'image de la marque a une image très colorée, pétillante et invitante. Mes principales inspirations
+                    ont été les <i>metaballs</i>, l'effet demi-teinte, ainsi que le neumorphisme. Pour ce qui est des 
+                    étiquettes, je souhaitais qu'elles fassent chacune des références subtiles à l'été, telles que 
+                    des vagues, des rayons de soleil, etc.
                 </p>
             </div>
             <div class="identité-graphique-elements">
                 <div>
                     <h3>Palette de <div class="mot-h3-gras">couleurs</div></h3>
-                    <!-- <img src="" alt=""> -->
+                    <img id="img-palette-couleurs" src="images/ImgPaletteCouleurs.png" alt="">
                 </div>
                 <div>
                     <h3>Effet <div class="mot-h3-gras">demi-teinte</div></h3>
-                    <!-- <img src="" alt=""> -->
+                    <img id="img-style-graphique" src="images/ImgStyleGraphique.png" alt="">
                 </div>
             </div>
             <div>
                 <div>
-                    <h2>Étiquette des crayons</h2>
+                    <h2>Étiquettes des crayons</h2>
                     <div class="centrer-contenu">
-                        <img class="placeholder-etiquette-boite" src="images/PlaceholderRectangle.png" alt="">
+                        <div class="carrousel">
+                            <a class="bouton-img-precedente bouton-carrousel">
+                                <span class="material-symbols-outlined">
+                                    arrow_back_ios
+                                </span>
+                            </a>
+                            <!-- Les images -->
+                            <div class="les-images">
+                                <img src="images/EtiquettesCrayons/EtiquetteCrayonRose.png" alt="">
+                            </div>
+                            <div class="les-images">
+                                <img src="images/EtiquettesCrayons/EtiquetteCrayonBleu.png" alt="">
+                            </div>
+                            <div class="les-images">
+                                <img src="images/EtiquettesCrayons/EtiquetteCrayonMauve.png" alt="">
+                            </div>
+                            <div class="les-images">
+                                <img src="images/EtiquettesCrayons/EtiquetteCrayonOrange.png" alt="">
+                            </div>
+                            <div class="les-images">
+                                <img src="images/EtiquettesCrayons/EtiquetteCrayonJaune.png" alt="">
+                            </div>
+                            <a class="bouton-img-suivante bouton-carrousel">
+                                <span class="material-symbols-outlined">
+                                arrow_forward_ios
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div>
                     <h2>Étiquette de la boîte</h2>
                     <div class="centrer-contenu">
-                        <img class="placeholder-etiquette-boite" src="images/PlaceholderRectangle.png" alt="">
+                        <img class="img-etiquette-boite" src="images/EtiquetteBoiteV2.png" alt="">
                     </div>
                 </div>
             </div>
@@ -97,61 +132,63 @@
         <section id="cinema4d" class="section-c4d">
             <h1>Cinema 4D</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni ut voluptates explicabo 
-                vero repellat officiis consectetur! Labore porro adipisci quaerat. Harum sint optio dolor cum 
-                quaerat animi, neque illum?
+                Ensuite, j'ai appris à utiliser le logiciel Cinema 4D. Afin de faciliter le flux de travail,
+                j'ai divisé mon projet en trois scènes distinctes: la première étant celle d'ouverture, la 
+                deuxième est celle dans laquelle les crayons dessinent sur le papier, puis la troisième est 
+                celle dans laquelle les crayons vont dans leur boîte.
             </p>
             <div class="contenu-c4d">
                 <div class="c4d-modelisation">
                     <h2>Modélisation</h2>
                     <div class="c4d-sous-section-img">
-                        <img class="placeholder-img-c4d" src="images/PlaceholderRectangle.png" alt="">
-                        <img class="placeholder-img-c4d" src="images/PlaceholderRectangle.png" alt="">
+                        <img class="img-c4d" src="images/Modele3DCrayon.jpg" alt="">
+                        <img class="img-c4d" src="images/Modele3DBoite.jpg" alt="">
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni ut voluptates explicabo 
-                        vero repellat officiis consectetur! Labore porro adipisci quaerat. Harum sint optio dolor cum 
-                        quaerat animi, neque illum?
+                        Étant l'objet mis en avant dans ma publicité, j'ai dû modéliser un crayon. Pour ce faire,
+                        j'avais pris des crayons dont j'aimais bien la forme en photo puis je m'en suis inspirée 
+                        afin de réaliser un croquis pour celui que j'ai modélisé. Puis, j'ai aussi modélisé la boîte 
+                        d'emballage pour ces derniers.
                     </p>
                 </div>
                 <div class="c4d-textures">
                     <h2>Textures</h2>
                     <div class="c4d-sous-section-img">
-                        <img class="placeholder-img-c4d" src="images/PlaceholderRectangle.png" alt="">
-                        <img class="placeholder-img-c4d" src="images/PlaceholderRectangle.png" alt="">
+                        <img class="img-c4d" src="images/TexturesCrayons.jpg" alt="">
+                        <img class="img-c4d" src="images/TexturesBoite.jpg" alt="">
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni ut voluptates explicabo 
-                        vero repellat officiis consectetur! Labore porro adipisci quaerat. Harum sint optio dolor cum 
-                        quaerat animi, neque illum?
+                        Pour les textures, je suis allée vers des matériaux rappelant plus du plastique. J'y ai aussi 
+                        intégré les étiquettes que j'ai réalisé sur Illustrator.
                     </p>
                 </div>
                 <div class="c4d-eclairages-decor">
-                    <h2>Éclairage et décor</h2>
+                    <h2>Éclairage et décors</h2>
                     <div class="c4d-sous-section-img">
-                        <img class="placeholder-img-c4d" src="images/PlaceholderRectangle.png" alt="">
-                        <img class="placeholder-img-c4d" src="images/PlaceholderRectangle.png" alt="">
+                        <img class="img-c4d" src="images/DecorScene01.jpg" alt="">
+                        <img class="img-c4d" src="images/DecorScene03.jpg" alt="">
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni ut voluptates explicabo 
-                        vero repellat officiis consectetur! Labore porro adipisci quaerat. Harum sint optio dolor cum 
-                        quaerat animi, neque illum?
+                        Comme mentionné plus haut, j'ai séparé mon projet en trois scènes distinctes. Chacune d'entre elles 
+                        réutilisent le même arrière-plan et le même éclairage de base, seuls les lumières de type <i>backlight </i>
+                        ont été modifiées ou déplacées. De plus, pour la première scène, j'ai aussi créé un système de particules 
+                        afin de rendre le décor plus intéressant.
                     </p>
                 </div>
                 <div class="c4d-quelques-images">
                     <h2>Quelques images</h2>
                     <div class="c4d-sous-section-quelques-img">
                         <div>
-                            <img class="placeholder-quelques-img-c4d" src="images/PlaceholderRectangle.png" alt="">
+                            <img class="quelques-img-c4d" src="images/DecorScene02.jpg" alt="">
                         </div>
                         <div>
-                            <img class="placeholder-quelques-img-c4d" src="images/PlaceholderRectangle.png" alt="">
+                            <img class="quelques-img-c4d" src="images/Particules.jpg" alt="">
                         </div>
                         <div>
-                            <img class="placeholder-quelques-img-c4d" src="images/PlaceholderRectangle.png" alt="">
+                            <img class="quelques-img-c4d" src="images/RenduScene2.jpg" alt="">
                         </div>
                         <div>
-                            <img class="placeholder-quelques-img-c4d" src="images/PlaceholderRectangle.png" alt="">
+                            <img class="quelques-img-c4d" src="images/RenduBoiteCrayon.jpg" alt="">
                         </div> 
                     </div>
                 </div>
@@ -163,13 +200,10 @@
             <div>
                 <h1>Montage</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni ut voluptates explicabo 
-                    vero repellat officiis consectetur! Labore porro adipisci quaerat. Harum sint optio dolor cum 
-                    quaerat animi, neque illum?
+                    Pour le montage de la publicité, j'ai choisi d'utiliser le logiciel After Effects afin de 
+                    pouvoir ajouter davantage d'animations. J'ai notamment aussi créé divers masques appliqués 
+                    sur les objets afin de créer des transitions intéressantes et dynamiques.
                 </p>
-            </div>
-            <div class="centrer-contenu">
-                <img class="placeholder-video" src="images/PlaceholderRectangle.png" alt="">
             </div>
         </section>
     </main>
@@ -195,4 +229,7 @@
         </div>
     </footer>
 </body>
+    <!-- Fichiers JavaScript -->
+    <!-- <script src="gestion-scroll.js"></script> -->
+    <script src="carrousel.js"></script>
 </html>
