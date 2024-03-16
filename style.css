@@ -28,6 +28,11 @@ main {
     overflow-x: hidden;
 }
 
+::selection {
+    color: var(--beige);
+    background: var(--rose-mauve);
+}
+
 /************************  VERSION MOBILE ************************/
 /****** MENU DU SITE ******/
 .logo-kreativ {
@@ -38,6 +43,8 @@ main {
     margin: auto;
     margin-top: 0.6rem;
     transform: rotate(5deg);
+    /* Animation du logo */
+    animation: animation-logo 1.15s cubic-bezier(.15,.59,.46,1);
 }
 
 /* Styles de la barre du menu */
@@ -85,6 +92,16 @@ main {
     font-size: 1.3rem;
     font-weight: 550;
     padding: 0.7rem;
+    transform-origin: center;
+    transform: scale(100%);
+    transition: 200ms cubic-bezier(.15,.59,.46,1);
+}
+
+/* Animation des liens du menu au survol */
+.menu-site > div > a:hover {
+    background-color: #d89dbde0;
+    font-weight: 650;
+    transform: scale(108%);
 }
 
 /* Styles du bouton burger */
@@ -131,6 +148,10 @@ section {
     margin-right: 1rem;
     display: flex;
     flex-direction: column;
+    opacity: 100%;
+    transform: scale(100%);
+    /* Animation fade-in */
+    animation: fade-in-sections 1.7s cubic-bezier(.15,.59,.46,1);
 }
 
 section > div {
@@ -156,6 +177,10 @@ h3 {
     color: var(--mauve);
     font-weight: 600;
     font-size: 0.95rem;
+}
+
+p {
+    line-height: 1.3rem;
 }
 
 /* Pour centrer les images et bien les positionner */
@@ -237,6 +262,15 @@ h3 {
     font-size: 1.7rem;
     font-weight: 700;
     color: var(--noir);
+    transform-origin: center;
+    transform: scale(100%);
+    transition: 200ms cubic-bezier(.15,.59,.46,1);
+}
+
+.bouton-carrousel > .material-symbols-outlined:hover {
+    color: var(--rose-mauve);
+    font-weight: 800;
+    transform: scale(125%);
 }
 
 /* Styles des sous-sections de la section Cinema 4D */
@@ -268,11 +302,31 @@ h3 {
 .img-c4d {
     width: 48%;
     border-radius: 7px;
+    transform-origin: center;
+    transform: scale(100%);
+    transition: 200ms cubic-bezier(.15,.59,.46,1);
 }
 
 .quelques-img-c4d {
     width: 100%;
     border-radius: 7px;
+    transform-origin: center;
+    transform: scale(100%);
+    transition: 200ms cubic-bezier(.15,.59,.46,1);
+    position: relative;
+}
+
+/* Animation de survol des images */
+.img-c4d:hover {
+    transform: scale(117%);
+    border: var(--rose-mauve) 3px solid;
+    z-index: 20;
+}
+
+.quelques-img-c4d:hover {
+    transform: scale(122%);
+    border: var(--rose-mauve) 3px solid;
+    z-index: 20;
 }
 
 /* Styles du footer */
@@ -308,6 +362,14 @@ footer{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     margin-top: 1rem;
+    transition: 200ms cubic-bezier(.15,.59,.46,1);
+}
+
+/* Animation des liens du footer au survol */
+.liens-web-footer > a:hover {
+    background-color: #d89dbde0;
+    font-weight: 650;
+    transform: scale(108%);
 }
 
 footer > div > h6 {
@@ -405,6 +467,8 @@ footer > div > h6 {
         margin-left: 0rem;
         position: relative;
         right: -32vw;
+        /* Animation du menu */
+        animation: animation-menu 1.15s cubic-bezier(.15,.59,.46,1);
     }
         
     .menu-site > div > a {
@@ -424,10 +488,6 @@ footer > div > h6 {
     h1 {
         text-align: left;
         margin-left: 2rem;
-    }
-
-    p {
-        line-height: 1.3rem;
     }
 
     .centrer-contenu{
@@ -470,14 +530,19 @@ footer > div > h6 {
     }
 
     .identité-graphique-elements{
-        width: 50%;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .identité-graphique-elements > div{
+        width: 40%;
         margin: 0 auto;
     }
 
     .identité-graphique-elements > div > #img-palette-couleurs {
         width: 80%;
         position: relative;
-        top: 1rem;
+        top: 0.7rem;
     }
     
     .identité-graphique-elements > div > #img-style-graphique {
@@ -510,5 +575,38 @@ footer > div > h6 {
 
     h6 {
         font-size: 1rem;
+    }
+}
+
+/************************ ANIMATIONS ************************/
+@keyframes fade-in-sections {
+    from {
+        opacity: 0%;
+        transform: scale(90%);
+    }
+
+    to {
+        opacity: 100%;
+        transform: scale(100%);
+    }
+}
+
+@keyframes animation-logo {
+    from {
+        margin-top: -9rem;
+    }
+
+    to {
+        margin-top: 0.6rem;
+    }
+}
+
+@keyframes animation-menu {
+    from {
+        margin-top: -9rem;
+    }
+
+    to {
+        margin-top: 0rem;
     }
 }
