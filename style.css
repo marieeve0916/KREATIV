@@ -7,6 +7,10 @@
     --noir: #2A2B2E;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Styles généraux du body */
 body {
     font-family: "Montserrat", sans-serif;
@@ -24,8 +28,8 @@ main {
     overflow-x: hidden;
 }
 
-/************ VERSION MOBILE ************/
-/****** MENU ******/
+/************************  VERSION MOBILE ************************/
+/****** MENU DU SITE ******/
 .logo-kreativ {
     width: 118px;
     height: 65px;
@@ -88,9 +92,10 @@ main {
     color: var(--beige);
     padding-left: 1rem;
     z-index: 10;
+    cursor: pointer;
 }
 
-/* Gestion du fonctionnement de la case à cocher qui ouvre le menu */
+/* Fonctionnement du checkbox qui ouvre le menu */
 #case-bouton-burger {
     display: none;
 }
@@ -111,21 +116,25 @@ main {
   display: block;
 }
 
-/****** SECTIONS DU SITE ******/
-/* Styles de chaque section du site */
+/*********** SECTIONS DU SITE ***********/
+/* Styles généraux de chaque section du site */
 section {
-    background-color: var(--beige);
+    background-color: #fcf5f0;
     border-radius: 20px;
     box-shadow: #907d627b 2px 2px 5px;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 0.1rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
     display: flex;
     flex-direction: column;
+}
+
+section > div {
+    margin-bottom: 1rem;
 }
 
 /* Styles des différents titres */
@@ -156,6 +165,81 @@ h3 {
     align-items: center;
 }
 
+/* Styles de la vidéo dans la section Présentation */
+.video-kreativ {
+    width: 95%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Style des sous-sections de la section Image */
+.identité-graphique-elements{
+    display: flex;
+    justify-content: space-between;
+}
+
+.identité-graphique-elements > div {
+    width: 44%;
+    background-color: #cf7faa52;
+    box-shadow: #9c886a66 2px 2px 5px;
+    border-radius: 13px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+}
+
+.identité-graphique-elements > div > img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img-etiquette-boite {
+    width: 85%;
+    border-radius: 8px;
+}
+
+.identité-graphique-elements > div > #img-style-graphique {
+    width: 35%;
+    position: relative;
+    bottom: 0.5rem;
+}
+
+.mot-h3-gras {
+    font-weight: 750;
+    font-size: 1.1rem;
+}
+
+/* Styles du carrousel */
+.carrousel > div > img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.les-images {
+    width: 80%;
+    display: none;
+}
+
+.carrousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.bouton-carrousel {
+    cursor: pointer;
+}
+
+.bouton-carrousel > .material-symbols-outlined {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--noir);
+}
+
+/* Styles des sous-sections de la section Cinema 4D */
 .c4d-sous-section-img {
     display: flex;
     justify-content: space-around;
@@ -172,59 +256,23 @@ h3 {
     margin-bottom: 0.35rem;
 }
 
-/* Style des sous-sections de la section Image */
-.identité-graphique-elements{
-    display: flex;
-    justify-content: space-between;
+.contenu-c4d > div {
+    margin-bottom: 2rem;
 }
 
-.identité-graphique-elements > div {
-    width: 44%;
-    background-color: #cf7faa52;
-    box-shadow: #9c886a66 2px 2px 5px;
-    border-radius: 13px;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+.c4d-quelques-img {
+    margin-bottom: -1rem;
 }
 
-.identité-graphique-elements > div > img {
-    width: 60%;
-    margin: 0 auto;
-}
-
-.identité-graphique-elements > div > #img-style-graphique {
-    width: 30%;
-}
-
-.mot-h3-gras {
-    font-weight: 750;
-    font-size: 1.1rem;
-}
-
-/* Styles du carrousel */
-.carrousel > div > img {
-    width: 70%;
-}
-
-.carrousel {
-    width: 80%;
-}
-
-/* Styles des éléments temporaires */
-.placeholder-video {
-    width: 95%;
-}
-
-.placeholder-etiquette-boite {
-    width: 95%;
-}
-
-.placeholder-img-c4d {
+/* Styles des images de la section Cinema 4D */
+.img-c4d {
     width: 48%;
+    border-radius: 7px;
 }
 
-.placeholder-quelques-img-c4d {
+.quelques-img-c4d {
     width: 100%;
+    border-radius: 7px;
 }
 
 /* Styles du footer */
@@ -244,7 +292,7 @@ footer{
 }
 
 .liens-web-footer {
-    width: 35%;
+    width: 10rem;
     display: flex;
     flex-direction: column;
 }
@@ -267,10 +315,10 @@ footer > div > h6 {
     font-weight: 400;
 }
 
-/***************** REQUÊTES MÉDIAS ******************/
-/************ VERSION TABLETTE ************/
+/************************  VERSION TABLETTE ************************/
 @media screen and (min-width:576px) {
-   section {
+    /* Styles généraux des sections */
+    section {
         margin-left: 4rem;
         margin-right: 4rem;
         margin-bottom: 5rem;
@@ -279,12 +327,46 @@ footer > div > h6 {
         padding-bottom: 2rem;
     }
 
+    /* Styles des paragraphes */
     section > div > p {
         width: 90%;
         margin: auto;
         margin-bottom: 2rem;
     }
 
+    /* Styles des éléments dans la section Image */
+    .identité-graphique-elements {
+        justify-content: center;
+    }
+
+    .identité-graphique-elements > div {
+        width: 30%;
+        margin: 1rem;
+    }
+    
+    .identité-graphique-elements > div > img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .identité-graphique-elements > div > #img-style-graphique {
+        width: 35%;
+        position: relative;
+        bottom: 0.5rem;
+    }
+    
+    /* Style de l'image de l'étiquette de la boîte */
+    .img-etiquette-boite {
+        width: 45%;
+        border-radius: 8px;
+    }
+
+    /* Ajustement de la largeur du carrousel */
+    .carrousel {
+        width: 70%;
+    }
+
+    /* Styles du footer */
     footer {
         height: 30rem;
         padding-left: 4rem;
@@ -295,14 +377,16 @@ footer > div > h6 {
         margin: 0rem;
     }
 }
-/************ VERSION ORDINATEUR ************/
+
+/************************  VERSION ORDINATEUR ************************/
 @media (min-width:992px) {
     /****** MENU ******/
     .logo-kreativ {
         position: relative;
         left: -37vw;
     }
-        
+    
+    /* Retirer le menu burger */
     .menu-site {
         width: 67%;
         height: 2.6rem;
@@ -336,17 +420,23 @@ footer > div > h6 {
         display: none;
     }
 
+    /* Styles des titres */
     h1 {
         text-align: left;
         margin-left: 2rem;
+    }
+
+    p {
+        line-height: 1.3rem;
     }
 
     .centrer-contenu{
         justify-content: center;
     }
 
+    /* Styles généraux des sections */
     section {
-        width: 75%;
+        width: 70%;
         margin: 0 auto;
         margin-top: 1rem;
         margin-bottom: 3rem;
@@ -354,6 +444,26 @@ footer > div > h6 {
         flex-direction: row;
     }
 
+    section > div > p {
+        margin: 0rem;
+    }
+
+    /* Section Présentation */
+    .section-presentation > div {
+        width: 100%;
+    }
+
+    .video-kreativ {
+        width: 90%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .section-presentation > div > p {
+        width: 100%;
+    }
+
+    /* Section Image */
     .section-image {
         flex-direction: row;
         flex-wrap: wrap;
@@ -364,14 +474,25 @@ footer > div > h6 {
         margin: 0 auto;
     }
 
-    .identité-graphique-elements > div > img {
-        width: 44%;
+    .identité-graphique-elements > div > #img-palette-couleurs {
+        width: 80%;
+        position: relative;
+        top: 1rem;
     }
     
     .identité-graphique-elements > div > #img-style-graphique {
-        width: 20%;
+        width: 40%;
     }
 
+    .carrousel {
+        width: 80%;
+    }
+
+    .img-etiquette-boite {
+        width: 45%;
+    }
+
+    /* Section Cinema 4D */
     .section-c4d {
         flex-direction: column;
     }
@@ -385,5 +506,9 @@ footer > div > h6 {
 
     .contenu-c4d > div {
         width: 46%;
+    }
+
+    h6 {
+        font-size: 1rem;
     }
 }
