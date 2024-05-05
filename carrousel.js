@@ -14,7 +14,6 @@ boutonPrecedent.addEventListener('click', function(){
     changerImage(-1);
 });
 
-
 // Associer un index à une image et l'afficher
 montrerUneImage(imgIndex);
 
@@ -23,17 +22,16 @@ function changerImage(numeroSuivantPrecedent) {
     montrerUneImage(imgIndex += numeroSuivantPrecedent);
 }
 
-
 // Fonction pour afficher une image
-function montrerUneImage(numeroSuivantPrecedent) {
+function montrerUneImage(nouvelIndex) {
     
     // Si le numéro de l'image est plus grand que le nombre d'images, on fait apparaître la première image
-    if (numeroSuivantPrecedent > lesImages.length) {
+    if (nouvelIndex > lesImages.length) {
         imgIndex = 1;
     }
 
     // Si le numéro de l'image est plus petit que 1, on montre la dernière image
-    if (numeroSuivantPrecedent < 1) {
+    if (nouvelIndex < 1) {
         imgIndex = lesImages.length;
     }
 
